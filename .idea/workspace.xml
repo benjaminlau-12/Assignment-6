@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="" />
+    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +180,7 @@
       <workItem from="1603938969132" duration="597000" />
       <workItem from="1603946459800" duration="11924000" />
       <workItem from="1604107859698" duration="18719000" />
-      <workItem from="1604358042076" duration="205000" />
+      <workItem from="1604358042076" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="30 Oct 2020">
       <created>1604069691970</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604357810588</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2 Nov 2020">
+      <created>1604358371537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604358371538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,11 +219,46 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -227,10 +269,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="2 Nov 2020" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="207" y="23" key="#Project_Structure" timestamp="1604009317021">
+    <state x="207" y="23" key="#Project_Structure" timestamp="1604358261598">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
-    <state x="207" y="23" key="#Project_Structure/0.23.1440.786@0.23.1440.786" timestamp="1604009317021" />
+    <state x="207" y="23" key="#Project_Structure/0.23.1440.786@0.23.1440.786" timestamp="1604358261598" />
     <state x="17" y="98" width="1240" height="586" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604357655744">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
@@ -310,10 +352,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="357" y="184" key="MultipleFileMergeDialog/0.23.1440.786@0.23.1440.786" timestamp="1604357828485" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1604357815999">
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1604358490606">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.786@0.23.1440.786" timestamp="1604357815999" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.786@0.23.1440.786" timestamp="1604358490606" />
     <state x="397" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604358247740">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
