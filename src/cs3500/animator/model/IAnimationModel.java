@@ -124,4 +124,10 @@ public interface IAnimationModel {
    * @return the height value of the animation canvas.
    */
   int getHeight();
+
+  /**
+   *
+   * @return
+   */
+  Map<Command, String> getCommands();
 }

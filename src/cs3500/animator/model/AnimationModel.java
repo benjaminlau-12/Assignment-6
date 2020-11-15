@@ -10,7 +10,14 @@ import java.util.TreeMap;
  */
 // Invariant: The width and height of the model is always positive.
 //            The r, g, and b value of a shape will always be between 0 and 225.
-public class AnimationModel implements IAnimationModel {
+public final class AnimationModel implements IAnimationModel {
+
+  /**
+   *
+   */
+  public static final class Builder extends AnimationBuilder<IAnimationModel> {
+    // FILL IN HERE
+  }
 
   // A stub to represent a list of commands given to the model.
   // Represents the list of shapes within this model
@@ -149,30 +156,9 @@ public class AnimationModel implements IAnimationModel {
     return this.boundHeight;
   }
 
-  // The following methods are for Assignment 5 testing purposes.
   @Override
-  public String toString() {
-    StringBuilder result = new StringBuilder();
-    for (Map.Entry<Command, String> entry : commands.entrySet()) {
-      Command command = entry.getKey();
-      IShape shape = shapes.get(entry.getValue());
-      result.append("shape ").append(entry.getValue()).append(" ").append(shape.getShapeType())
-          .append("\n");
-
-      result.append("motion ").append(entry.getValue()).append(" ").append(command.getStart() + " ")
-          .append(command.getStartX() + " ").append(command.getStartY() + " ")
-          .append(command.getStartWidth() + " ").append(command.getStartHeight() + " ")
-          .append(command.getStartR() + " ").append(command.getStartG() + " ")
-          .append(command.getStartB() + " ");
-
-      result.append(" ").append(command.getEnd() + " ")
-          .append(command.getEndX() + " ").append(command.getEndY() + " ")
-          .append(command.getEndWidth() + " ").append(command.getEndWidth() + " ")
-          .append(command.getEndHeight() + " ")
-          .append(command.getEndR() + " ").append(command.getEndG() + " ")
-          .append(command.getEndB() + "\n");
-    }
-    return result.toString();
+  public Map<Command, String> getCommands() {
+    return this.commands;
   }
 
   /**
