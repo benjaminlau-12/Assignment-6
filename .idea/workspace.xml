@@ -16,42 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/CommandTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/ICommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/Canvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/RGB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/TimeLapse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/ShapeTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/AnimationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/Drawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/IDrawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/IView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/SVGView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/TextualView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/AnimationViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TextualViewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Assignment 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment 5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorAnimationView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorTextualView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorVisualView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/view/VisualView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/ITextualView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/IVisualView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/AnimationModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/AnimationModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/CommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EllipseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/EllipseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/RectangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/ShapeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +186,7 @@
       <workItem from="1603946459800" duration="11924000" />
       <workItem from="1604107859698" duration="18719000" />
       <workItem from="1604358042076" duration="721000" />
-      <workItem from="1605393557829" duration="9384000" />
+      <workItem from="1605393557829" duration="9678000" />
     </task>
     <task id="LOCAL-00001" summary="30 Oct 2020">
       <created>1604069691970</created>
@@ -265,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605399630552</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="15 Nov 2020">
+      <created>1605477080822</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605477080823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,13 +257,6 @@
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
                   <entry key="roots">
                     <value>
                       <list>
@@ -334,7 +299,8 @@
     <MESSAGE value="30 Oct 2020" />
     <MESSAGE value="2 Nov 2020" />
     <MESSAGE value="14 Nov 2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="14 Nov 2020" />
+    <MESSAGE value="15 Nov 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="15 Nov 2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="23" key="#Project_Structure" timestamp="1605470497515">
@@ -434,10 +400,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="357" y="184" key="MultipleFileMergeDialog/0.23.1440.786@0.23.1440.786" timestamp="1604357828485" />
-    <state x="320" y="155" key="Vcs.Push.Dialog.v2" timestamp="1605399634554">
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2" timestamp="1605477084038">
       <screen x="0" y="23" width="1440" height="782" />
     </state>
-    <state x="320" y="155" key="Vcs.Push.Dialog.v2/0.23.1440.782@0.23.1440.782" timestamp="1605399634554" />
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2/0.23.1440.782@0.23.1440.782" timestamp="1605477084038" />
     <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.786@0.23.1440.786" timestamp="1604358643962" />
     <state x="397" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604358247740">
       <screen x="0" y="23" width="1440" height="786" />
