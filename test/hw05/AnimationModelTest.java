@@ -1,3 +1,5 @@
+package hw05;
+
 import cs3500.animator.model.AnimationModel;
 import cs3500.animator.model.IAnimationModel;
 import cs3500.animator.model.shapes.Ellipse;
@@ -15,7 +17,7 @@ public class AnimationModelTest {
 
   IAnimationModel model = new AnimationModel(0, 0, 50, 50);
   IShape square = new Rectangle(0, 0, 10, 10, 255, 255, 255);
-  IShape circle = new Ellipse(0, 0, 3, 3, 0, 0, 0, 0, 0);
+  IShape circle = new Ellipse("",0, 0, 3, 3, 0, 0, 0, 0, 0);
 
   /**
    * Test that adding a shape to the model will add that shape to the Map(String,Shape) shapes.

@@ -1,3 +1,5 @@
+package hw05;
+
 import static org.junit.Assert.assertEquals;
 
 import cs3500.animator.model.shapes.Ellipse;
@@ -8,7 +10,7 @@ import org.junit.Test;
  */
 public class EllipseTest {
 
-  Ellipse ellipse = new Ellipse(200, 250, 100, 150, 50, 75, 255, 0, 0);
+  Ellipse ellipse = new Ellipse("",200, 250, 100, 150, 50, 75, 255, 0, 0);
 
   /**
    * To test setter methods.
@@ -135,7 +137,7 @@ public class EllipseTest {
   @Test(expected = IllegalArgumentException.class)
   public void testConstructorCx() {
     Ellipse ellipseWithInvalidValues =
-        new Ellipse(200, 250, 100, 175, -8, 50, 255, 0, 0);
+        new Ellipse("",200, 250, 100, 175, -8, 50, 255, 0, 0);
   }
 
   /**
@@ -144,6 +146,6 @@ public class EllipseTest {
   @Test(expected = IllegalArgumentException.class)
   public void testConstructorCy() {
     Ellipse ellipseWithInvalidValues =
-        new Ellipse(200, 250, 100, 175, 18, -1, 255, 0, 0);
+        new Ellipse("",200, 250, 100, 175, 18, -1, 255, 0, 0);
   }
 }

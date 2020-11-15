@@ -66,16 +66,12 @@ public interface IShape {
    */
   void setHeight(int height) throws IllegalArgumentException;
 
-  // The following methods are only for Assignment 5 testing purposes, and will likely be removed
-  // for protection in later assignments.
-
   /**
    * Returns the x position of the shape.
    *
    * @return the x position of the shape.
    */
   int getX();
-
 
   /**
    * Returns the y position of the shape.
@@ -120,9 +116,29 @@ public interface IShape {
   int getB();
 
   /**
-   * Returns the shape type, either "Rectangle" or "Ellipse", of this Shape.
+   * Returns the shape type, either ShapeTypes.RECTANGLE or ShapeTypes.ELLIPSE, of this Shape.
    *
-   * @return the shape type, either "Rectangle" or "Ellipse", of this Shape.
+   * @return the shape type, either ShapeTypes.RECTANGLE or ShapeTypes.ELLIPSE, of this Shape.
    */
-  String getShapeType();
+  ShapeTypes getShapeType();
+
+  /**
+   *
+   * @return
+   */
+  String getName();
+
+  /**
+   *
+   * @return
+   */
+  String textToString();
+
+  /**
+   *
+   * @return
+   * @param tick
+   */
+  String SVGToString(int tick);
+
 }

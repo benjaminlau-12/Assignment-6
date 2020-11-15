@@ -1,5 +1,6 @@
 package cs3500.animator.model;
 
+import cs3500.animator.model.helpers.Canvas;
 import cs3500.animator.model.shapes.IShape;
 import java.util.Map;
 import java.util.TreeMap;
@@ -26,10 +27,7 @@ public final class AnimationModel implements IAnimationModel {
   // Represents the current tick of this model.
   private int currentTick;
   // int representing the size information of this model.
-  private int boundX;
-  private int boundY;
-  private int boundWidth = 1;
-  private int boundHeight = 1;
+  private Canvas canvas;
 
   /**
    * Constructor of the AnimationModel class.
@@ -78,10 +76,7 @@ public final class AnimationModel implements IAnimationModel {
     if (width <= 0 || height <= 0) {
       throw new IllegalArgumentException("The width and height values must be positive.");
     }
-    this.boundX = x;
-    this.boundY = y;
-    this.boundWidth = width;
-    this.boundHeight = height;
+    this.canvas = new Canvas(x,y,width,height);
   }
 
   @Override
@@ -138,22 +133,22 @@ public final class AnimationModel implements IAnimationModel {
 
   @Override
   public int getX() {
-    return this.boundX;
+    return this.canvas.getBoundX();
   }
 
   @Override
   public int getY() {
-    return this.boundY;
+    return this.canvas.getBoundY();
   }
 
   @Override
   public int getWidth() {
-    return this.boundWidth;
+    return this.canvas.getBoundWidth();
   }
 
   @Override
   public int getHeight() {
-    return this.boundHeight;
+    return this.canvas.getBoundHeight();
   }
 
   @Override

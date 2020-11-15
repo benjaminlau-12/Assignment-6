@@ -1,5 +1,11 @@
 package cs3500.animator.model.shapes;
 
+import cs3500.animator.model.helpers.RGB;
+import cs3500.animator.model.helpers.TimeLapse;
+import java.sql.Time;
+import java.util.TreeMap;
+import javax.imageio.plugins.tiff.TIFFImageReadParam;
+
 /**
  * Represents a general shape class of undefined type. A Shape currently one of an ellipse or a
  * rectangle. A Shape cannot have 0 area.
@@ -7,15 +13,17 @@ package cs3500.animator.model.shapes;
 public class Shape implements IShape {
 
   // represents the color composition of this Shape object.
-  protected int r = 0;
-  protected int g = 0;
-  protected int b = 0;
+  protected RGB rgb = new RGB(0, 0, 0);
   // represents the x and y coordinate of this Shape object on the animation canvas.
   protected int x;
   protected int y;
   // represents the height and width of this Shape object.
   protected int width;
   protected int height;
+  //
+  protected TreeMap<TimeLapse,double[]> commands;
+  // represents the name of this Shape object
+  private String name;
 
   /**
    * Constructor of the Shape class. All units are in pixels.
@@ -28,7 +36,8 @@ public class Shape implements IShape {
    * @param g      The green level of the shape's color.
    * @param b      The blue level of the shape's color.
    */
-  public Shape(int x, int y, int height, int width, int r, int g, int b) {
+  public Shape(String name, int x, int y, int height, int width, int r, int g, int b) {
+    this.name = name;
     this.setPosition(x, y);
     this.setSize(width, height);
     this.setColor(r, g, b);
@@ -39,9 +48,7 @@ public class Shape implements IShape {
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
       throw new IllegalArgumentException("The color composition input(s) is invalid.");
     }
-    this.r = r;
-    this.g = g;
-    this.b = b;
+    this.rgb = new RGB(r, g, b);
   }
 
   @Override
@@ -94,9 +101,6 @@ public class Shape implements IShape {
     this.height = height;
   }
 
-  // The following methods are only for Assignment 5 testing purposes, and will likely be removed
-  // for protection in later assignments.
-
   @Override
   public int getX() {
     return this.x;
@@ -119,21 +123,77 @@ public class Shape implements IShape {
 
   @Override
   public int getR() {
-    return this.r;
+    return this.rgb.getR();
   }
 
   @Override
   public int getG() {
-    return this.g;
+    return this.rgb.getG();
   }
 
   @Override
   public int getB() {
-    return this.b;
+    return this.rgb.getB();
   }
 
   @Override
-  public String getShapeType() {
-    return "rectangle";
+  public ShapeTypes getShapeType() {
+    return ShapeTypes.RECTANGLE;
+  }
+
+  @Override
+  public String getName() {
+    return this.name;
+  }
+
+  @Override
+  public String textToString() {
+    StringBuilder builder = new StringBuilder();
+    for (TimeLapse t : this.commands.keySet()) {
+      builder.append(commandToString(t) + "\n");
+    }
+    return builder.toString();
+  }
+
+  @Override
+  public String SVGToString(int tick) {
+    StringBuilder builder = new StringBuilder();
+    /*if (commands.size() > 0) {
+      builder.append(String.format("<%s id=\"%s\" %s fill=\"%s\" visibility=\"hidden\">\n",
+          shapeString(), this.name, shapeProp(true),
+          colorTag(true)));
+
+      builder.append(String.format("<animate attributeType=\"xml\" begin=\"%1$,.2fs\" dur=\"%2$,.2fs\"" +
+              " attributeName=\"visibility\" from=\"visible\" to=\"hidden\"/>\n",
+          getShapeFirstTime() / (double) tick, getShapeLastTime() / (double) tick));
+      for (Interval i : commands.keySet()) {
+        builder.append(intervalTag(i, tick));
+      }
+    } else {
+     builder.append(String.format("<%s id=\"%s\" %s fill=\"%s\" visibility=\"hidden\">\n",
+          shapeString(), this.name, shapeProp(false),
+          colorTag(false)));
+    }
+    builder.append(String.format("</%s>\n", shapeString()));
+    return builder.toString();*/
+    return null;
+  }
+
+  /**
+   *
+   *
+   * @param t
+   * @return
+   */
+  private String commandToString(TimeLapse t) {
+    if(t.getStart() < 0 || t.getEnd() < 0 || t.getEnd() < t.getStart()){
+      throw new IllegalArgumentException("The input interval is invalid.");
+    }
+    double[] shapeInfo = this.commands.get(t);
+    StringBuilder state = new StringBuilder("motion " + this.name + " ");
+    for (double d : shapeInfo) {
+      state.append(Math.round(d) + " ");
+    }
+    return state.toString();
   }
 }

@@ -1,3 +1,5 @@
+package hw05;
+
 import static org.junit.Assert.assertEquals;
 
 import cs3500.animator.model.Command;

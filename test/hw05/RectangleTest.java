@@ -1,42 +1,45 @@
+package hw05;
+
 import static org.junit.Assert.assertEquals;
 
+import cs3500.animator.model.shapes.Rectangle;
 import cs3500.animator.model.shapes.Shape;
 import org.junit.Test;
 
 /**
- * Test for the class Shape.
+ * Test for the class Rectangle.
  */
-public class ShapeTest {
+public class RectangleTest {
 
-  Shape shape = new Shape(200, 250, 100, 150, 255, 0, 0);
+  Shape rectangle = new Rectangle(200, 250, 100, 150, 255, 0, 0);
 
   /**
    * To test setter methods.
    */
   @Test
   public void testSetters() {
-    assertEquals(150, shape.getWidth());
-    shape.setColor(27, 58, 230);
-    shape.setX(175);
-    shape.setY(228);
-    shape.setHeight(150);
-    shape.setWidth(200);
+    assertEquals(150, rectangle.getWidth());
+    rectangle.setColor(27, 58, 230);
+    rectangle.setX(175);
+    rectangle.setY(228);
+    rectangle.setHeight(150);
+    rectangle.setWidth(200);
 
-    assertEquals(230, shape.getB());
-    assertEquals(58, shape.getG());
-    assertEquals(27, shape.getR());
-    assertEquals(175, shape.getX());
-    assertEquals(228, shape.getY());
-    assertEquals(150, shape.getHeight());
-    assertEquals(200, shape.getWidth());
+    assertEquals(230, rectangle.getB());
+    assertEquals(58, rectangle.getG());
+    assertEquals(27, rectangle.getR());
+    assertEquals(175, rectangle.getX());
+    assertEquals(228, rectangle.getY());
+    assertEquals(150, rectangle.getHeight());
+    assertEquals(200, rectangle.getWidth());
 
-    shape.setPosition(210, 230);
-    shape.setSize(95, 105);
+    rectangle.setPosition(210, 230);
+    rectangle.setSize(95, 105);
 
-    assertEquals(95, shape.getWidth());
-    assertEquals(105, shape.getHeight());
-    assertEquals(210, shape.getX());
-    assertEquals(230, shape.getY());
+    assertEquals(95, rectangle.getWidth());
+    assertEquals(105, rectangle.getHeight());
+    assertEquals(210, rectangle.getX());
+    assertEquals(230, rectangle.getY());
   }
 
   /**
@@ -44,13 +47,13 @@ public class ShapeTest {
    */
   @Test
   public void testGetters() {
-    assertEquals(0, shape.getB());
-    assertEquals(0, shape.getG());
-    assertEquals(255, shape.getR());
-    assertEquals(200, shape.getX());
-    assertEquals(250, shape.getY());
-    assertEquals(100, shape.getHeight());
-    assertEquals(150, shape.getWidth());
+    assertEquals(0, rectangle.getB());
+    assertEquals(0, rectangle.getG());
+    assertEquals(255, rectangle.getR());
+    assertEquals(200, rectangle.getX());
+    assertEquals(250, rectangle.getY());
+    assertEquals(100, rectangle.getHeight());
+    assertEquals(150, rectangle.getWidth());
   }
 
   /**
@@ -59,7 +62,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetColorErrorWithOutOfBoundsValue() {
-    shape.setColor(255, 0, 256);
+    rectangle.setColor(255, 0, 256);
   }
 
   /**
@@ -68,7 +71,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetColorErrorWithNegativeValue() {
-    shape.setColor(255, -1, 18);
+    rectangle.setColor(255, -1, 18);
   }
 
   /**
@@ -77,7 +80,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetSizeErrorWithNegativeValue() {
-    shape.setSize(1, -1);
+    rectangle.setSize(1, -1);
   }
 
   /**
@@ -86,7 +89,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetSizeErrorWithValuesEqualToZero() {
-    shape.setSize(0, 0);
+    rectangle.setSize(0, 0);
   }
 
   /**
@@ -95,7 +98,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetWidthErrorWithNegativeValue() {
-    shape.setWidth(-15);
+    rectangle.setWidth(-15);
   }
 
   /**
@@ -104,7 +107,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetHeightErrorWithNegativeValue() {
-    shape.setHeight(-7);
+    rectangle.setHeight(-7);
   }
 
   /**
@@ -113,8 +116,8 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetHeightErrorGivenZeroWidth() {
-    shape.setWidth(0);
-    shape.setHeight(0);
+    rectangle.setWidth(0);
+    rectangle.setHeight(0);
   }
 
   /**
@@ -123,7 +126,7 @@ public class ShapeTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testSetWidthErrorGivenZeroHeight() {
-    shape.setHeight(0);
-    shape.setWidth(0);
+    rectangle.setHeight(0);
+    rectangle.setWidth(0);
   }
 }

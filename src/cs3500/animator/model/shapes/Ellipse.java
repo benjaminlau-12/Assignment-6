@@ -22,8 +22,8 @@ public class Ellipse extends Shape {
    * @param g  The green level of the shape's color.
    * @param b  The blue level of the shape's color.
    */
-  public Ellipse(int x, int y, int rx, int ry, int cx, int cy, int r, int g, int b) {
-    super(x, y, rx, ry, r, g, b);
+  public Ellipse(String name, int x, int y, int rx, int ry, int cx, int cy, int r, int g, int b) {
+    super(name, x, y, rx, ry, r, g, b);
     if (cx < 0 || cy < 0) {
       throw new IllegalArgumentException("At least one of cx or cy is negative.");
     }
@@ -53,7 +53,7 @@ public class Ellipse extends Shape {
   }
 
   @Override
-  public String getShapeType() {
-    return "ellipse";
+  public ShapeTypes getShapeType() {
+    return ShapeTypes.ELLIPSE;
   }
 }

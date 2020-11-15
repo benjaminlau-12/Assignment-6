@@ -17,17 +17,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorAnimationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorTextualView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorVisualView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/ITextualView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/IVisualView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/CommandTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/ICommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/Canvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/RGB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/TimeLapse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/ShapeTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/AnimationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/Drawing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/IDrawing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/IView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/SVGView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/view/TextualView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/AnimationViewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TextualViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment 5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/IAnimationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/IAnimationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorAnimationView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorTextualView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/AnimatorVisualView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/view/VisualView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/ITextualView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/view/IVisualView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AnimationModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/AnimationModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/CommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EllipseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/EllipseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/hw05/ShapeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +62,11 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="module-info" />
-        <option value="JUnit3 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -81,7 +107,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -95,6 +121,9 @@
       <recent name="" />
       <recent name="CS3500.animator.model" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="cs3500.animator.model.AnimationModel" />
       <recent name="junit.framework.TestCase" />
@@ -104,7 +133,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnimationModelTest.testToString">
+  <component name="RunManager" selected="JUnit.AnimationModelTest.testMoveShapeNegative">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -120,8 +149,8 @@
     </configuration>
     <configuration name="AnimationModelTest.testAddShape" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimationModelTest" />
+      <option name="PACKAGE_NAME" value="hw05" />
+      <option name="MAIN_CLASS_NAME" value="hw05.AnimationModelTest" />
       <option name="METHOD_NAME" value="testAddShape" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -130,8 +159,8 @@
     </configuration>
     <configuration name="AnimationModelTest.testMoveShapeDNE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimationModelTest" />
+      <option name="PACKAGE_NAME" value="hw05" />
+      <option name="MAIN_CLASS_NAME" value="hw05.AnimationModelTest" />
       <option name="METHOD_NAME" value="testMoveShapeDNE" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -140,8 +169,8 @@
     </configuration>
     <configuration name="AnimationModelTest.testMoveShapeNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimationModelTest" />
+      <option name="PACKAGE_NAME" value="hw05" />
+      <option name="MAIN_CLASS_NAME" value="hw05.AnimationModelTest" />
       <option name="METHOD_NAME" value="testMoveShapeNegative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -150,8 +179,8 @@
     </configuration>
     <configuration name="AnimationModelTest.testRemoveShape" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimationModelTest" />
+      <option name="PACKAGE_NAME" value="hw05" />
+      <option name="MAIN_CLASS_NAME" value="hw05.AnimationModelTest" />
       <option name="METHOD_NAME" value="testRemoveShape" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -160,8 +189,8 @@
     </configuration>
     <configuration name="AnimationModelTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment 5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimationModelTest" />
+      <option name="PACKAGE_NAME" value="hw05" />
+      <option name="MAIN_CLASS_NAME" value="hw05.AnimationModelTest" />
       <option name="METHOD_NAME" value="testToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -192,7 +221,7 @@
       <workItem from="1603946459800" duration="11924000" />
       <workItem from="1604107859698" duration="18719000" />
       <workItem from="1604358042076" duration="721000" />
-      <workItem from="1605393557829" duration="1893000" />
+      <workItem from="1605393557829" duration="9384000" />
     </task>
     <task id="LOCAL-00001" summary="30 Oct 2020">
       <created>1604069691970</created>
@@ -229,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604358635674</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="14 Nov 2020">
+      <created>1605399630551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605399630552</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,12 +333,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="30 Oct 2020" />
     <MESSAGE value="2 Nov 2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 Nov 2020" />
+    <MESSAGE value="14 Nov 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="14 Nov 2020" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="207" y="23" key="#Project_Structure" timestamp="1604358261598">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="207" y="23" key="#Project_Structure" timestamp="1605470497515">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="207" y="23" key="#Project_Structure/0.23.1440.782@0.23.1440.782" timestamp="1605470497515" />
     <state x="207" y="23" key="#Project_Structure/0.23.1440.786@0.23.1440.786" timestamp="1604358261598" />
     <state x="17" y="98" width="1240" height="586" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604357655744">
       <screen x="0" y="23" width="1440" height="786" />
@@ -312,33 +350,41 @@
       <screen x="0" y="23" width="1440" height="790" />
     </state>
     <state x="429" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.790@0.23.1440.790" timestamp="1604001626418" />
-    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1605399178148">
+    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1605475392399">
       <screen x="0" y="23" width="1440" height="782" />
     </state>
-    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser/0.23.1440.782@0.23.1440.782" timestamp="1605399178148" />
+    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser/0.23.1440.782@0.23.1440.782" timestamp="1605475392399" />
     <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/0.23.1440.786@0.23.1440.786" timestamp="1604355869010" />
     <state x="533" y="129" key="#com.intellij.ide.util.MemberChooser/0.23.1440.790@0.23.1440.790" timestamp="1603999245195" />
-    <state x="458" y="182" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1604355183823">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="458" y="181" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605476655396">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="458" y="181" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.782@0.23.1440.782" timestamp="1605476655396" />
     <state x="458" y="182" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.786@0.23.1440.786" timestamp="1604355183823" />
     <state x="458" y="183" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.790@0.23.1440.790" timestamp="1604001477807" />
-    <state x="436" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604355180094">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="436" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605476648219">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="436" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.782@0.23.1440.782" timestamp="1605476648219" />
     <state x="436" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.786@0.23.1440.786" timestamp="1604355180094" />
-    <state x="475" y="287" width="532" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604357888701">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="227" y="345" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605476081031">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="227" y="345" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.782@0.23.1440.782" timestamp="1605476081031" />
+    <state x="475" y="286" width="532" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605470502250">
+      <screen x="0" y="23" width="1440" height="782" />
+    </state>
+    <state x="475" y="286" width="532" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.782@0.23.1440.782" timestamp="1605470502250" />
     <state x="475" y="287" width="532" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.786@0.23.1440.786" timestamp="1604357888701" />
     <state x="475" y="288" width="532" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.790@0.23.1440.790" timestamp="1604001568532" />
     <state x="456" y="249" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605397380409">
       <screen x="0" y="23" width="1440" height="782" />
     </state>
     <state x="456" y="249" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.782@0.23.1440.782" timestamp="1605397380409" />
-    <state x="458" y="170" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604349404606">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="458" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605472644650">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="458" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.782@0.23.1440.782" timestamp="1605472644650" />
     <state x="458" y="170" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.786@0.23.1440.786" timestamp="1604349404606" />
     <state x="522" y="342" key="Github.CreateGistDialog" timestamp="1604358152307">
       <screen x="0" y="23" width="1440" height="786" />
@@ -388,18 +434,20 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="357" y="184" key="MultipleFileMergeDialog/0.23.1440.786@0.23.1440.786" timestamp="1604357828485" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1604358643962">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2" timestamp="1605399634554">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2/0.23.1440.782@0.23.1440.782" timestamp="1605399634554" />
     <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.786@0.23.1440.786" timestamp="1604358643962" />
     <state x="397" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604358247740">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="397" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.786@0.23.1440.786" timestamp="1604358247740" />
     <state x="397" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.790@0.23.1440.790" timestamp="1604001347066" />
-    <state x="459" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604355184575">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="459" y="190" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605476656369">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="459" y="190" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.782@0.23.1440.782" timestamp="1605476656369" />
     <state x="459" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.786@0.23.1440.786" timestamp="1604355184575" />
     <state x="459" y="236" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.790@0.23.1440.790" timestamp="1604001478654" />
     <state x="253" y="159" width="934" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604343871159">
@@ -410,6 +458,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="52" y="38" key="new project wizard/0.23.1440.786@0.23.1440.786" timestamp="1604358215536" />
+    <state x="504" y="198" key="refactoring.ChangeSignatureDialog" timestamp="1605474779181">
+      <screen x="0" y="23" width="1440" height="782" />
+    </state>
+    <state x="504" y="198" key="refactoring.ChangeSignatureDialog/0.23.1440.782@0.23.1440.782" timestamp="1605474779181" />
     <state x="385" y="136" width="670" height="673" key="search.everywhere.popup" timestamp="1604341531890">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
@@ -425,7 +477,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java</url>
-          <line>88</line>
+          <line>83</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
