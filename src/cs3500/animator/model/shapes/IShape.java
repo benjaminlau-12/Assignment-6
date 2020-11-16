@@ -123,22 +123,26 @@ public interface IShape {
   ShapeTypes getShapeType();
 
   /**
+   * Returns the name of the shape.
    *
-   * @return
+   * @return The name of the shape.
    */
   String getName();
 
   /**
+   * Returns a String that describes the properties of this shape (name, width, height, x-position,
+   * y-position, color).
    *
-   * @return
+   * @return A String that describes the properties of this shape.
    */
   String textToString();
 
   /**
+   * Returns a String that describes the properties of this shape (name, width, height, x-position,
+   * y-position, color) in SVG format.
    *
-   * @return
-   * @param tick
+   * @param tick The tick of the canvas of animatoin.
+   * @return A String that describes the properties of this shape in SVG format.
    */
   String SVGToString(int tick);
-
 }

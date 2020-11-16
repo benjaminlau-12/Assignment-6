@@ -2,9 +2,7 @@ package cs3500.animator.model.shapes;
 
 import cs3500.animator.model.helpers.RGB;
 import cs3500.animator.model.helpers.TimeLapse;
-import java.sql.Time;
 import java.util.TreeMap;
-import javax.imageio.plugins.tiff.TIFFImageReadParam;
 
 /**
  * Represents a general shape class of undefined type. A Shape currently one of an ellipse or a
@@ -21,7 +19,7 @@ public class Shape implements IShape {
   protected int width;
   protected int height;
   //
-  protected TreeMap<TimeLapse,double[]> commands;
+  protected TreeMap<TimeLapse, double[]> commands;
   // represents the name of this Shape object
   private String name;
 
@@ -180,13 +178,13 @@ public class Shape implements IShape {
   }
 
   /**
+   * Returns a String that describes the command of a specific time interval t.
    *
-   *
-   * @param t
-   * @return
+   * @param t The time interval of the command.
+   * @return The String that describes the command happening during the interval.
    */
   private String commandToString(TimeLapse t) {
-    if(t.getStart() < 0 || t.getEnd() < 0 || t.getEnd() < t.getStart()){
+    if (t.getStart() < 0 || t.getEnd() < 0 || t.getEnd() < t.getStart()) {
       throw new IllegalArgumentException("The input interval is invalid.");
     }
     double[] shapeInfo = this.commands.get(t);

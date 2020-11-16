@@ -17,7 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020">
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Height.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Width.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment 5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/Excellence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/IAnimationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/IAnimationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/commands/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/IShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TextualViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TextualViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +46,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Kotlin File" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,11 +98,15 @@
       <recent name="cs3500.animator.model" />
       <recent name="CS3500.animator.model.shapes" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="CS3500.animator.model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cs3500.animator.model.commands" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -96,20 +114,15 @@
       <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
   </component>
   <component name="RunManager" selected="JUnit.AnimationModelTest.testMoveShapeNegative">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,6 +203,8 @@
       <workItem from="1604358042076" duration="721000" />
       <workItem from="1605393557829" duration="9891000" />
       <workItem from="1605477675502" duration="136000" />
+      <workItem from="1605477859022" duration="185000" />
+      <workItem from="1605554906968" duration="3977000" />
     </task>
     <task id="LOCAL-00001" summary="30 Oct 2020">
       <created>1604069691970</created>
@@ -254,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605477690364</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2 Nov 2020">
+      <created>1605477874743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605477874743</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,9 +344,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="30 Oct 2020" />
     <MESSAGE value="14 Nov 2020" />
-    <MESSAGE value="2 Nov 2020" />
     <MESSAGE value="15 Nov 2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="15 Nov 2020" />
+    <MESSAGE value="2 Nov 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 Nov 2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="23" key="#Project_Structure" timestamp="1605470497515">
@@ -340,10 +362,10 @@
       <screen x="0" y="23" width="1440" height="790" />
     </state>
     <state x="429" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.790@0.23.1440.790" timestamp="1604001626418" />
-    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1605475392399">
+    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1605557524055">
       <screen x="0" y="23" width="1440" height="782" />
     </state>
-    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser/0.23.1440.782@0.23.1440.782" timestamp="1605475392399" />
+    <state x="533" y="127" key="#com.intellij.ide.util.MemberChooser/0.23.1440.782@0.23.1440.782" timestamp="1605557524055" />
     <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/0.23.1440.786@0.23.1440.786" timestamp="1604355869010" />
     <state x="533" y="129" key="#com.intellij.ide.util.MemberChooser/0.23.1440.790@0.23.1440.790" timestamp="1603999245195" />
     <state x="458" y="181" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605476655396">
@@ -425,10 +447,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="357" y="184" key="MultipleFileMergeDialog/0.23.1440.786@0.23.1440.786" timestamp="1604357828485" />
-    <state x="320" y="155" key="Vcs.Push.Dialog.v2" timestamp="1605477699399">
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2" timestamp="1605477938630">
       <screen x="0" y="23" width="1440" height="782" />
     </state>
-    <state x="320" y="155" key="Vcs.Push.Dialog.v2/0.23.1440.782@0.23.1440.782" timestamp="1605477699399" />
+    <state x="320" y="155" key="Vcs.Push.Dialog.v2/0.23.1440.782@0.23.1440.782" timestamp="1605477938630" />
     <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.23.1440.786@0.23.1440.786" timestamp="1604358643962" />
     <state x="397" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604358247740">
       <screen x="0" y="23" width="1440" height="786" />
@@ -466,11 +488,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cs3500/animator/model/AnimationModel.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

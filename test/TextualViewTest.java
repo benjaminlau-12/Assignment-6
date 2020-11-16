@@ -24,7 +24,7 @@ public class TextualViewTest {
    *
    */
   private void init(){
-    IShape ellipse = new Ellipse("E", 10,10,10,10,10,10,10,10,10);
+    IShape ellipse = new Ellipse("E", 10,10,10,10,10,10,10);
     shapes.add(ellipse);
   }
 

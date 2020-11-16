@@ -16,7 +16,7 @@ public class Rectangle extends Shape {
    * @param g      The green level of the shape's color.
    * @param b      The blue level of the shape's color.
    */
-  public Rectangle(int x, int y, int height, int width, int r, int g, int b) {
-    super(x, y, height, width, r, g, b);
+  public Rectangle(String name, int x, int y, int height, int width, int r, int g, int b) {
+    super(name, x, y, height, width, r, g, b);
   }
 }
