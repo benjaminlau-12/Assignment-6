@@ -16,7 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020" />
+    <list default="true" id="31274fb3-2c8d-4dd2-be49-6a2d59856658" name="Default Changelist" comment="2 Nov 2020">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/animator/model/helpers/Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TextualViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TextualViewTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +87,7 @@
       <recent name="CS3500.animator.model.shapes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -188,7 +193,7 @@
       <workItem from="1605393557829" duration="9891000" />
       <workItem from="1605477675502" duration="136000" />
       <workItem from="1605477859022" duration="185000" />
-      <workItem from="1605554906968" duration="4090000" />
+      <workItem from="1605554906968" duration="4954000" />
     </task>
     <task id="LOCAL-00001" summary="30 Oct 2020">
       <created>1604069691970</created>
@@ -267,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605559915117</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="16 Nov 2020">
+      <created>1605560125098</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605560125098</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,9 +471,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="253" y="159" width="934" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.786@0.23.1440.786" timestamp="1604343871159" />
-    <state x="52" y="38" key="new project wizard" timestamp="1604358215536">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="52" y="38" key="new project wizard" timestamp="1605560059766">
+      <screen x="0" y="23" width="1440" height="782" />
     </state>
+    <state x="52" y="38" key="new project wizard/0.23.1440.782@0.23.1440.782" timestamp="1605560059765" />
     <state x="52" y="38" key="new project wizard/0.23.1440.786@0.23.1440.786" timestamp="1604358215536" />
     <state x="504" y="198" key="refactoring.ChangeSignatureDialog" timestamp="1605474779181">
       <screen x="0" y="23" width="1440" height="782" />

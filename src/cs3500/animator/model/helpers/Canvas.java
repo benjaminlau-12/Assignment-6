@@ -55,4 +55,9 @@ public class Canvas {
   public int getBoundHeight(){
     return boundHeight;
   }
+
+  @Override
+  public String toString() {
+    return this.boundX + " " + this.boundY + " " + this.boundWidth + " " + this.boundHeight + "\n";
+  }
 }

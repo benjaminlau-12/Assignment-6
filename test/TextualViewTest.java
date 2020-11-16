@@ -1,5 +1,4 @@
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertEquals;
 
 import cs3500.animator.model.AnimationModel;
 import cs3500.animator.model.IAnimationModel;
